@@ -1,35 +1,47 @@
-import { memo } from 'react';
+import { H3 } from '@/components/typography/h3';
+import { isEmpty } from 'lodash-es';
+import { memo, useCallback } from 'react';
 import { Droppable } from 'react-beautiful-dnd';
-import { IColumn, useList } from '../store/useList';
+import { ISection } from '../store/useList';
 import Element from './element';
 
-function Section({ section }: { section: IColumn }) {
-  const isPreviewMode = useList((state) => state.isPreviewMode);
+function Section({ section, isPreviewMode }: { section: ISection; isPreviewMode?: boolean }) {
+  const MainContent = useCallback(
+    () => (
+      <>
+        {section.taskIds.map((taskId, key) => (
+          <Element sectionId={section.id} taskId={taskId} key={taskId} index={key} isPreviewMode={isPreviewMode} />
+        ))}
+      </>
+    ),
+    [isPreviewMode, section?.id, section?.taskIds],
+  );
+
+  if (isEmpty(section)) return null;
 
   if (isPreviewMode) {
     return (
-      <div>
-        <h2 className='text-2xl'>{section.title}</h2>
-        {section.taskIds.map((taskId, key) => (
-          <Element sectionId={section.id} taskId={taskId} key={taskId} index={key} />
-        ))}
+      <div className='flex flex-col gap-2 p-4'>
+        <H3>{section.title}</H3>
+        <MainContent />
       </div>
     );
   }
 
   return (
-    <div className='bg-blue-200 border-2 border-blue-700 border-dashed '>
-      <h2 className='px-2 py-1 text-2xl font-bold text-blue-500'>{section.title}</h2>
+    <div className='flex flex-col gap-2 px-2 my-4'>
+      <H3>{section.title}</H3>
+
       <Droppable droppableId={`${section.id}`}>
         {(provided, snapshot) => (
           <div
             ref={provided.innerRef}
             {...provided.droppableProps}
-            className={`m-2 ${snapshot.isDraggingOver && 'bg-gray-200'}`}
+            className={`p-2 -m-2 rounded-lg ${snapshot.isDraggingOver && 'bg-gray-300'}`}
           >
-            {section.taskIds.map((taskId, key) => (
-              <Element sectionId={section.id} taskId={taskId} key={taskId} index={key} />
-            ))}
+            <div className='-mt-4 opacity-0'>Drop here</div>
+
+            <MainContent />
 
             {provided.placeholder}
           </div>

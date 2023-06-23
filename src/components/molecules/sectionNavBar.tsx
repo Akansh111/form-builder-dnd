@@ -1,39 +1,37 @@
+import { Button } from '@/components/ui/button';
 import { memo } from 'react';
 import { useList } from '../store/useList';
 
 function SectionNavBar() {
   const activeSection = useList((s) => s.activeSection);
   const setActiveSection = useList((s) => s.setActiveSection);
-  const columnOrder = useList((s) => s.columnOrder);
-  const previousSection = columnOrder?.[columnOrder.indexOf(activeSection) - 1];
-  const nextSection = columnOrder?.[columnOrder.indexOf(activeSection) + 1];
+  const sectionOrder = useList((s) => s.sectionOrder);
+  const previousSection = sectionOrder?.[sectionOrder.indexOf(activeSection) - 1];
+  const nextSection = sectionOrder?.[sectionOrder.indexOf(activeSection) + 1];
 
   return (
-    <>
-      <div className='flex'>
-        {previousSection && (
-          <button
-            onClick={() => {
-              setActiveSection(previousSection);
-            }}
-            className={' px-4 py-2 my-4 text-white bg-blue-500 rounded-md hover:bg-blue-700'}
-          >
-            Previous
-          </button>
-        )}
+    <div className='flex px-4 pb-4 '>
+      {previousSection && (
+        <Button
+          onClick={() => {
+            setActiveSection(previousSection);
+          }}
+        >
+          Previous
+        </Button>
+      )}
 
-        {nextSection && (
-          <button
-            onClick={() => {
-              setActiveSection(nextSection);
-            }}
-            className={'ml-auto px-4 py-2 my-4 text-white bg-blue-500 rounded-md hover:bg-blue-700'}
-          >
-            Next
-          </button>
-        )}
-      </div>
-    </>
+      {nextSection && (
+        <Button
+          onClick={() => {
+            setActiveSection(nextSection);
+          }}
+          className='ml-auto'
+        >
+          Next
+        </Button>
+      )}
+    </div>
   );
 }
 

@@ -1,39 +1,48 @@
+import capitalize from 'lodash-es/capitalize';
+import lowerCase from 'lodash-es/lowerCase';
 import { create } from 'zustand';
+import { getUniqueId } from '../utils/objectFunc';
 
 export interface IElement {
   tagName: string;
   tagType?: 'closed' | 'open';
-  attributes: {
-    [key: string]: string | object;
+  attributes?: {
+    [key: string]: string | number | object;
   };
   innerHTML?: string;
   children?: IElement[];
 }
-export interface ITask {
+export interface IElementParent {
   id: string;
   content: string;
   element: IElement;
 }
 
-export interface IColumn {
+export interface ISection {
   id: string;
   title: string;
   taskIds: string[];
 }
 
+export interface INewSection extends ISection {
+  elements: {
+    [key: string]: IElementParent;
+  };
+}
 interface IUseList {
   isPreviewMode: boolean;
-  tasks: {
-    [key: string]: ITask;
+  elements: {
+    [key: string]: IElementParent;
   };
-  columns: {
-    [key: string]: IColumn;
+  sections: {
+    [key: string]: ISection;
   };
-  columnOrder: string[];
+  sectionOrder: string[];
   activeSection: string;
 
   setPreviewMode: (isPreviewMode: boolean) => void;
-  add: (Element: ITask) => void;
+  add: (Element: IElementParent) => void;
+  addSection: (newSection: INewSection) => void;
   removeElement: (sectionId: string, elementId: string) => void;
   clear: () => void;
   move: (
@@ -46,162 +55,503 @@ interface IUseList {
       index: number;
     },
   ) => void;
-  addNewColumn: () => void;
+  addNewSection: () => void;
+  removeSection: (sectionId: string) => void;
   setActiveSection: (sectionId: string) => void;
 }
 
 export const useList = create<IUseList>((set) => ({
   isPreviewMode: false,
-  tasks: {
-    'Element-0': {
-      id: 'Element-0',
-      content: 'Element 0',
+  elements: {
+    AddressDetails: {
+      id: 'AddressDetails',
+      content: 'Enter Your Address Details',
+      element: {
+        tagName: 'div',
+        attributes: {
+          style: {
+            display: 'flex',
+            flexDirection: 'column',
+          },
+        },
+        children: [
+          {
+            tagName: 'div',
+            innerHTML: 'Address',
+          },
+          {
+            tagName: 'div',
+            attributes: {
+              style: {
+                display: 'flex',
+                flexDirection: 'row',
+              },
+            },
+            children: [
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'text',
+                  placeholder: 'Street Address',
+                },
+              },
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'text',
+                  placeholder: 'City',
+                },
+              },
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'text',
+                  placeholder: 'State',
+                },
+              },
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'text',
+                  placeholder: 'Zip Code',
+                },
+              },
+            ],
+          },
+        ],
+      },
+    },
+    ContactInformation: {
+      id: 'ContactInformation',
+      content: 'Enter Your Contact Information',
+      element: {
+        tagName: 'div',
+        attributes: {
+          style: {
+            display: 'flex',
+            flexDirection: 'column',
+          },
+        },
+        children: [
+          {
+            tagName: 'div',
+            innerHTML: 'Contact Information',
+          },
+          {
+            tagName: 'div',
+            attributes: {
+              style: {
+                display: 'flex',
+                flexDirection: 'row',
+              },
+            },
+            children: [
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'text',
+                  placeholder: 'Email',
+                },
+              },
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'number',
+                  placeholder: 'Phone Number',
+                  minLength: 10,
+                  maxLength: 10,
+                },
+              },
+            ],
+          },
+        ],
+      },
+    },
+    EducationDetails: {
+      id: 'EducationDetails',
+      content: 'Enter Your Education Details',
+      element: {
+        tagName: 'div',
+        attributes: {
+          style: {
+            display: 'flex',
+            flexDirection: 'column',
+          },
+        },
+        children: [
+          {
+            tagName: 'div',
+            innerHTML: 'Education Details',
+          },
+          {
+            tagName: 'div',
+            attributes: {
+              style: {
+                display: 'grid',
+                gridTemplateColumns: '2fr 2fr',
+              },
+            },
+            children: [
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'text',
+                  placeholder: 'Degree',
+                },
+              },
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'text',
+                  placeholder: 'Major',
+                },
+              },
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'text',
+                  placeholder: 'University',
+                },
+              },
+              {
+                tagName: 'input',
+                tagType: 'closed',
+                attributes: {
+                  type: 'number',
+                  placeholder: 'Year of Graduation',
+                },
+              },
+            ],
+          },
+        ],
+      },
+    },
+    Password: {
+      id: 'Password',
+      content: 'Enter Your Password',
       element: {
         tagName: 'input',
         tagType: 'closed',
         attributes: {
-          type: 'text',
-          style: {
-            border: '1px solid black',
-            width: '100%',
-            padding: '5px',
-          },
-          placeholder: 'Enter your name',
+          type: 'password',
+          placeholder: 'Enter your password',
+          label: 'Password',
         },
       },
     },
-    'Element-1': {
-      id: 'Element-1',
-      content: 'Element 1',
+    CheckboxGroup: {
+      id: 'CheckboxGroup',
+      content: 'Select Your Interests',
       element: {
         tagName: 'div',
         attributes: {
           style: {
-            backgroundColor: 'red',
-            width: '100%',
-            height: '100px',
-            color: 'white',
-            fontWeight: 'bold',
+            display: 'flex',
+            flexDirection: 'column',
           },
         },
-        innerHTML: 'Background color red and height 100px and width 100% and color white and bold',
+        children: [
+          {
+            tagName: 'div',
+            innerHTML: 'Interests',
+          },
+          {
+            tagName: 'div',
+            attributes: {
+              style: {
+                display: 'flex',
+                flexDirection: 'column',
+              },
+            },
+            children: [
+              {
+                tagName: 'label',
+                innerHTML: 'Sports',
+                attributes: {
+                  style: {
+                    display: 'flex',
+                    flexDirection: 'row-reverse',
+                    'margin-right': 'auto',
+                  },
+                },
+                children: [
+                  {
+                    tagName: 'input',
+                    tagType: 'closed',
+                    attributes: {
+                      type: 'checkbox',
+                      value: 'sports',
+                    },
+                  },
+                ],
+              },
+              {
+                tagName: 'label',
+                innerHTML: 'Reading',
+                attributes: {
+                  style: {
+                    display: 'flex',
+                    flexDirection: 'row-reverse',
+                    'margin-right': 'auto',
+                  },
+                },
+                children: [
+                  {
+                    tagName: 'input',
+                    tagType: 'closed',
+                    attributes: {
+                      type: 'checkbox',
+                      value: 'reading',
+                    },
+                  },
+                ],
+              },
+              {
+                tagName: 'label',
+                innerHTML: 'Travel',
+                attributes: {
+                  style: {
+                    display: 'flex',
+                    flexDirection: 'row-reverse',
+                    'margin-right': 'auto',
+                  },
+                },
+                children: [
+                  {
+                    tagName: 'input',
+                    tagType: 'closed',
+                    attributes: {
+                      type: 'checkbox',
+                      value: 'travel',
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+        ],
       },
     },
-    'Element-2': {
-      id: 'Element-2',
-      content: 'Element 2',
+    TextArea: {
+      id: 'Message',
+      content: 'Enter Your Message',
       element: {
-        tagName: 'a',
+        tagName: 'div',
         attributes: {
-          href: 'https://www.google.com',
-          target: '_blank',
           style: {
-            color: 'blue',
-            textDecoration: 'underline',
+            display: 'flex',
+            flexDirection: 'column',
           },
         },
-        innerHTML: 'google',
+        children: [
+          {
+            tagName: 'div',
+            innerHTML: 'Message',
+          },
+          {
+            tagName: 'textarea',
+            tagType: 'closed',
+            attributes: {
+              placeholder: 'Type your message here',
+            },
+          },
+        ],
       },
     },
-    'Element-3': {
-      id: 'Element-3',
-      content: 'Element 3',
+    FileUpload: {
+      id: 'ProfilePicture',
+      content: 'Upload Your Profile Picture',
       element: {
         tagName: 'div',
-        attributes: {},
-        innerHTML: 'test2',
-      },
-    },
-    'Element-4': {
-      id: 'Element-4',
-      content: 'Element 4',
-      element: {
-        tagName: 'div',
-        attributes: {},
-        innerHTML: 'test',
-      },
-    },
-    'Element-5': {
-      id: 'Element-5',
-      content: 'Element 5',
-      element: {
-        tagName: 'textarea',
-        tagType: 'closed',
         attributes: {
-          placeholder: 'Enter a long message',
+          style: {
+            display: 'flex',
+            flexDirection: 'column',
+          },
         },
+        children: [
+          {
+            tagName: 'div',
+            innerHTML: 'Profile Picture',
+          },
+          {
+            tagName: 'input',
+            tagType: 'closed',
+            attributes: {
+              type: 'file',
+            },
+          },
+        ],
       },
     },
   },
-  columns: {
+  sections: {
+    toolbox: {
+      id: 'toolbox',
+      title: 'Toolbox',
+      taskIds: [
+        'AddressDetails',
+        'ContactInformation',
+        'EducationDetails',
+        'Password',
+        'CheckboxGroup',
+        'TextArea',
+        'FileUpload',
+      ],
+    },
     'section-1': {
       id: 'section-1',
       title: 'Section 1',
-      taskIds: ['Element-0', 'Element-1', 'Element-2', 'Element-3'],
-    },
-    'section-2': {
-      id: 'section-2',
-      title: 'Section 2',
-      taskIds: ['Element-4', 'Element-5'],
+      taskIds: [],
     },
   },
-  columnOrder: ['section-1', 'section-2'],
+  sectionOrder: ['section-1'],
   activeSection: 'section-1',
 
   setPreviewMode: (isPreviewMode) => set({ isPreviewMode }),
   add: (Element) =>
     set((state) => ({
-      tasks: {
-        ...state.tasks,
+      elements: {
+        ...state.elements,
         [Element.id]: Element,
       },
     })),
+  addSection: (_newSection) =>
+    set((state) => {
+      const newSection = { ..._newSection };
+      const newSections = { ...state.sections };
+      const newElements = { ...state.elements };
+
+      if (Object.keys(newSections).includes(newSection.id)) {
+        newSection['id'] = getUniqueId(newSection.id, newSections);
+      }
+
+      newSections[newSection.id] = {
+        id: newSection.id,
+        title: newSection.title,
+        taskIds: [],
+      };
+
+      Object.keys(newSection.elements).forEach((key) => {
+        const element = newSection.elements[key];
+        if (Object.keys(newElements).includes(key)) {
+          element['id'] = getUniqueId(key, newElements);
+        }
+        newSections[newSection.id].taskIds.push(element.id);
+        newElements[element.id] = { ...element };
+      });
+
+      return {
+        activeSection: `${newSection.id}`,
+        sections: { ...newSections },
+        sectionOrder: [...state.sectionOrder, newSection.id],
+        elements: { ...newElements },
+      };
+    }),
+
   removeElement: (sectionId, elementId) =>
     set((state) => {
       // removing element from column
-      const newColumns = { ...state.columns };
-      const fromTaskIds = newColumns[sectionId].taskIds;
+      const newSections = { ...state.sections };
+      const fromTaskIds = newSections[sectionId].taskIds;
       const index = fromTaskIds.findIndex((id) => id === elementId);
       fromTaskIds.splice(index, 1);
 
-      // removing element from tasks
-      const newTasks = { ...state.tasks };
-      delete newTasks[elementId];
+      // removing element from elements
+      const newElements = { ...state.elements };
+      delete newElements[elementId];
 
       return {
-        columns: newColumns,
-        tasks: newTasks,
+        sections: newSections,
+        elements: newElements,
       };
     }),
-  clear: () => set({ tasks: {} }),
+  clear: () => set({ elements: {} }),
   move: (fromCol, toCol) =>
     set((state) => {
-      const newColumns = { ...state.columns };
-      const fromTaskIds = newColumns[fromCol.droppableId].taskIds;
-      const toTaskIds = newColumns[toCol.droppableId].taskIds;
+      if (fromCol.droppableId === 'toolbox' && fromCol.droppableId !== toCol.droppableId) {
+        // adding duplicate in elements
+        const newElements = { ...state.elements };
+        const fromTaskIds = state.sections[fromCol.droppableId].taskIds;
+        const newElement = { ...state.elements[fromTaskIds[fromCol.index]] };
+        // newElement.id = `${newElement.id}-${Date.now()}`;
+        newElement.id = getUniqueId(newElement.id, newElements);
+        newElements[newElement.id] = newElement;
 
+        // adding duplicate in column
+        const newSections = { ...state.sections };
+        const toTaskIds = newSections[toCol.droppableId].taskIds;
+        toTaskIds.splice(toCol.index, 0, newElement.id);
+
+        return {
+          elements: newElements,
+          sections: newSections,
+        };
+      }
+
+      const newSections = { ...state.sections };
+      const fromTaskIds = newSections[fromCol.droppableId].taskIds;
+      const toTaskIds = newSections[toCol.droppableId].taskIds;
       const [removed] = fromTaskIds.splice(fromCol.index, 1);
       toTaskIds.splice(toCol.index, 0, removed);
 
       return {
-        columns: newColumns,
+        sections: newSections,
       };
     }),
-  addNewColumn: () =>
+  addNewSection: () =>
     set((state) => {
-      const newColumn = {
-        id: `${Date.now()}`,
-        title: `Section ${Date.now()}`,
+      const newSectionId = getUniqueId('section', state.sections);
+      const newSection = {
+        id: `${newSectionId}`,
+        title: `${capitalize(lowerCase(newSectionId))}`,
         taskIds: [],
       };
 
       return {
-        columns: {
-          ...state.columns,
-          [newColumn.id]: newColumn,
+        sections: {
+          ...state.sections,
+          [newSection.id]: newSection,
         },
-        columnOrder: [...state.columnOrder, newColumn.id],
-        activeSection: newColumn.id,
+        sectionOrder: [...state.sectionOrder, newSection.id],
+        activeSection: newSection.id,
+      };
+    }),
+
+  removeSection: (sectionId) =>
+    set((state) => {
+      const newSections = { ...state.sections };
+      const newElements = { ...state.elements };
+      const newSectionOrder = [...state.sectionOrder];
+
+      // removing section from sectionOrder
+      const index = newSectionOrder.findIndex((id) => id === sectionId);
+      newSectionOrder.splice(index, 1);
+
+      // removing elements from elements
+      const section = newSections[sectionId];
+      section.taskIds.forEach((id) => {
+        delete newElements[id];
+      });
+
+      // removing section from sections
+      delete newSections[sectionId];
+
+      state.setActiveSection(newSectionOrder[newSectionOrder.length - 1] || '');
+
+      return {
+        sections: newSections,
+        elements: newElements,
+        sectionOrder: newSectionOrder,
       };
     }),
   setActiveSection: (sectionId) => set({ activeSection: sectionId }),
