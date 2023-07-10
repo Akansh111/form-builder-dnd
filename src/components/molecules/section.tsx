@@ -1,54 +1,73 @@
-import { H3 } from '@/components/typography/h3';
-import { isEmpty } from 'lodash-es';
-import { memo, useCallback } from 'react';
-import { Droppable } from 'react-beautiful-dnd';
-import { ISection } from '../store/useList';
-import Element from './element';
+'use client';
+import { DragOverlay, useDroppable } from '@dnd-kit/core';
+import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
+import { lowerCase } from 'lodash-es';
+import { DRAGGABLE_TYPE } from '../constants/dnd';
+import { IGroup, ISection } from '../store/template';
+import { useDragContext } from '../store/useDragContext';
+import useTemplate from '../store/useTemplate';
+import Group from './group';
+import SortableItem from './sortableItem';
 
-function Section({ section, isPreviewMode }: { section: ISection; isPreviewMode?: boolean }) {
-  const MainContent = useCallback(
-    () => (
-      <>
-        {section.taskIds.map((taskId, key) => (
-          <Element sectionId={section.id} taskId={taskId} key={taskId} index={key} isPreviewMode={isPreviewMode} />
-        ))}
-      </>
-    ),
-    [isPreviewMode, section?.id, section?.taskIds],
-  );
+ function Section() {
+   const template = useTemplate((s) => s.template);
+   const activeSection = useTemplate((s) => s.activeSection);
+   const activeElement = useDragContext((s) => s.activeElement);
+   const addComponents = useTemplate((s) => s.addComponents);
 
-  if (isEmpty(section)) return null;
+   const { setNodeRef, isOver, over } = useDroppable({
+     id: DRAGGABLE_TYPE.ADD_GROUP,
+     data: {
+       accepts: [DRAGGABLE_TYPE.ADD_GROUP],
+     },
+   });
 
-  if (isPreviewMode) {
-    return (
-      <div className='flex flex-col gap-2 p-4'>
-        <H3>{section.title}</H3>
-        <MainContent />
-      </div>
-    );
-  }
+   // @ts-ignore
+   const { sectionHeader, ...groups } = (template?.[activeSection] || {}) as ISection;
 
-  return (
-    <div className='flex flex-col gap-2 px-2 my-4'>
-      <H3>{section.title}</H3>
+   if (activeSection === '') return null;
 
-      <Droppable droppableId={`${section.id}`}>
-        {(provided, snapshot) => (
-          <div
-            ref={provided.innerRef}
-            {...provided.droppableProps}
-            className={`p-2 -m-2 rounded-lg ${snapshot.isDraggingOver && 'bg-gray-300'}`}
-          >
-            <div className='-mt-4 opacity-0'>Drop here</div>
+   return (
+     <div className='m-2 space-y-2' ref={setNodeRef}>
+       <h2 className='text-2xl font-semibold tracking-tight capitalize'>{lowerCase(activeSection)}</h2>
 
-            <MainContent />
+       <div className={`${over ? 'bg-gray-500 rounded-lg' : 'bg-transparent'} -m-2 p-2 transition-all space-y-2`}>
+         <SortableContext items={Object.keys(groups)} strategy={verticalListSortingStrategy}>
+           {Object.keys(groups).map((groupKey) => (
+             <SortableItem id={groupKey} key={groupKey} type={DRAGGABLE_TYPE.GROUP}>
+               <Group title={groupKey} group={groups[groupKey] as IGroup} path={
+                `${activeSection}`
+               } />
+             </SortableItem>
+           ))}
+         </SortableContext>
 
-            {provided.placeholder}
-          </div>
-        )}
-      </Droppable>
-    </div>
-  );
-}
+         <DragOverlay>
+           {activeElement && activeElement?.type === DRAGGABLE_TYPE.GROUP ? (
+             <div className='transition-all rounded-md ring-2 ring-blue-600'>
+               <Group title={activeElement?.id} group={groups[activeElement?.id] as IGroup} />
+             </div>
+           ) : null}
 
-export default memo(Section);
+           {activeElement && activeElement?.type === DRAGGABLE_TYPE.ADD_GROUP ? (
+             <div className='w-[500px] transition-all rounded-md  ring-2 ring-blue-600'>
+               <Group
+                 title={activeElement.id.split('-')[2]}
+                 group={
+                   addComponents?.[activeElement.id.split('-')[1]]?.components?.[
+                     activeElement.id.split('-')[2]
+                   ] as IGroup
+                 }path={
+                  `${activeSection}`
+                 }
+               />
+             </div>
+           ) : null}
+         </DragOverlay>
+       </div>
+     </div>
+   );
+ }
+
+ export { Section };
+

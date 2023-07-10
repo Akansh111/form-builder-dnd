@@ -1,0 +1,6 @@
+export const DRAGGABLE_TYPE = {
+  GROUP: 'GROUP',
+  FIELD: 'FIELD',
+  ADD_GROUP: 'ADD_GROUP',
+  ADD_FIELD: 'ADD_FIELD',
+};

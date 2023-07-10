@@ -1,0 +1,2516 @@
+{
+  "templateHeader": {
+    "id": 100000,
+    "applicationTemplateFormId": "string",
+    "templateName": "string"
+  },
+  "applicantInformation": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "name": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "nameTitle": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "Mr"
+      },
+      "firstName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "middleName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "lastName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "suffix": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "Jr"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.056Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[QUcbLqy0MiB7flXwKa3UjB43NQrBGaNirwuIVrfRA4MgXgJmkFpUSx0_OY]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "emailAddress": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "emailType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "emailType": "Personal"
+      },
+      "emailAddress": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.057Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[icJFJ5IzB9ZtPMytyo7sfHywbUlU8p_aN0NjaOs2FCdiJffGuE3ojorcV3jNwnSYyciyOlnj_hLz]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "appliedToPropertyAddress": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "addressType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "addressType": "APPLIED_TO_PROPERTY"
+      },
+      "street1": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "street2": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "state": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "city": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "zip": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "country": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.058Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[qdVC0_GhZhza4NIbg49Tl4x]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "phoneNumber": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "contactType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "contactType": "Personal"
+      },
+      "countryCode": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "phoneNumber": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.058Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[Da8AKRY]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "dateOfBirth": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "day": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "month": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "year": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      }
+    },
+    "ssn": "062-66-4445"
+  },
+  "rentalPropertyInformation": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "rent": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "currency": "$",
+      "amount": "string"
+    },
+    "moveInDate": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "day": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "month": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "year": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      }
+    },
+    "moveOutDate": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "day": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "month": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "year": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      }
+    }
+  },
+  "addressInformation": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "currentAddress": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "addressType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "addressType": "APPLIED_TO_PROPERTY"
+      },
+      "street1": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "street2": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "state": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "city": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "zip": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "country": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.058Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[mc_bXJlFvAWwEZhmvxQIpbv8HLIrqBO3RV5RmodUbtN_4TUDuvRSqUO1KiGhex17fzR]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "datesOfResidence": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "dateOfResidenceFrom": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string",
+        "format": "2023-06-13"
+      },
+      "dateOfResidenceTo": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string",
+        "format": "2023-06-13"
+      }
+    },
+    "landlordDetails": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "landlordName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string",
+        "regexFormat": "string"
+      },
+      "contactEmail": {
+        "groupHeader": {
+          "groupId": 0,
+          "groupMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "groupIndex": 0,
+          "visible": true
+        },
+        "emailType": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "emailType": "Personal"
+        },
+        "emailAddress": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "string"
+        },
+        "customFields": {
+          "fields": [
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": 0
+            },
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": "string",
+              "regexFormat": "string"
+            },
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": "string",
+              "format": "2023-06-13"
+            },
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": "string",
+              "format": "2023-06-13T17:37:55.058Z"
+            },
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": true,
+              "format": "2023-06-13",
+              "rendering": "YesNo"
+            },
+            {
+              "id": 0,
+              "fieldIndex": 0,
+              "fieldMnemonic": "string",
+              "displayName": "string",
+              "choiceFieldElementsString": "[pnbJUW7ZE1SWD6Hz79768cD0OqYcfL_Vi1ZclTpR1q2LQeGtRNN4QcaOrV8SI2UqLgh1sos]"
+            }
+          ],
+          "customFields": "string"
+        }
+      },
+      "contactPhone": {
+        "groupHeader": {
+          "groupId": 0,
+          "groupMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "groupIndex": 0,
+          "visible": true
+        },
+        "contactType": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "contactType": "Personal"
+        },
+        "countryCode": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "string"
+        },
+        "phoneNumber": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "string"
+        },
+        "customFields": {
+          "fields": [
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": 0
+            },
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": "string",
+              "regexFormat": "string"
+            },
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": "string",
+              "format": "2023-06-13"
+            },
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": "string",
+              "format": "2023-06-13T17:37:55.058Z"
+            },
+            {
+              "fieldHeader": {
+                "fieldId": 0,
+                "fieldMnemonic": "string",
+                "displayLabel": "string",
+                "displaySubLabel": "string",
+                "fieldIndex": 0,
+                "visible": true
+              },
+              "fieldValue": true,
+              "format": "2023-06-13",
+              "rendering": "YesNo"
+            },
+            {
+              "id": 0,
+              "fieldIndex": 0,
+              "fieldMnemonic": "string",
+              "displayName": "string",
+              "choiceFieldElementsString": "[Lsx2IsRBczbXZnr46eXwcOn6Hiycg9g7H9SQPDbwvXHA2mxTYJQNR2ui1WNwz9IqGGPWHyMm2EeTzbXo10c2Fsc6fvZ]"
+            }
+          ],
+          "customFields": "string"
+        }
+      }
+    },
+    "reasonForNoLandlord": "string"
+  },
+  "employmentDetail": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "employerName": "string",
+    "employerAddress": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "addressType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "addressType": "APPLIED_TO_PROPERTY"
+      },
+      "street1": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "street2": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "state": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "city": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "zip": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "country": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.058Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[Qi2UgEzremZvtIIw_3v4TkpFYv1xou6A3apca2]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "employmentStartDate": "2023-06-13",
+    "employmentEndDate": "2023-06-13",
+    "status": "Current"
+  },
+  "previousEmploymentDetail": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "employerName": "string",
+    "employerAddress": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "addressType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "addressType": "APPLIED_TO_PROPERTY"
+      },
+      "street1": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "street2": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "state": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "city": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "zip": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "country": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.059Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[bmg0EKqWAOJmEiOSeOQZYea63nHHP7d5wYqjewPKNfV_o7fAh9NtE8ho1JAoeWkpdGQjdpb6NDH]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "employmentStartDate": "2023-06-13",
+    "employmentEndDate": "2023-06-13",
+    "status": "Current"
+  },
+  "assetsAndIncome": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "annualSalary": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": "string",
+      "value": 0
+    },
+    "incomeFromAssets": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": "string",
+      "value": 0
+    },
+    "additionalIncome": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": "string",
+      "value": 0
+    },
+    "totalAnnualIncome": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": "string",
+      "value": 0
+    }
+  },
+  "otherInformation": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "filedForBankruptcy": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": true,
+      "format": "2023-06-13",
+      "rendering": "YesNo"
+    },
+    "smoker": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": true,
+      "format": "2023-06-13",
+      "rendering": "YesNo"
+    },
+    "evictedFromPastProperties": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": true,
+      "format": "2023-06-13",
+      "rendering": "YesNo"
+    }
+  },
+  "petDetails": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "petOwner": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": true,
+      "format": "2023-06-13",
+      "rendering": "YesNo"
+    },
+    "petDetails": {
+      "fieldHeader": {
+        "fieldId": 0,
+        "fieldMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "fieldIndex": 0,
+        "visible": true
+      },
+      "fieldValue": "string",
+      "regexFormat": "string"
+    }
+  },
+  "attachmentsInformation": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "attachments": [
+      {
+        "groupHeader": {
+          "groupId": 0,
+          "groupMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "groupIndex": 0,
+          "visible": true
+        },
+        "latestPayStub1": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "latestPayStub2": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "letterOfEmployment": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "latestBankStatement1": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "latestBankStatement2": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "latestTaxReturn1": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "latestTaxReturn2": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "copyOfPhotoId": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "previousLandlordReferenceLetter": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "verificationOfAdditionalIncome": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "additionalAttachment": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        },
+        "additionalAttachment2": {
+          "fieldHeader": {
+            "fieldId": 0,
+            "fieldMnemonic": "string",
+            "displayLabel": "string",
+            "displaySubLabel": "string",
+            "fieldIndex": 0,
+            "visible": true
+          },
+          "fieldValue": "Text"
+        }
+      }
+    ]
+  },
+  "brokerInformation": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "brokerName": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "nameTitle": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "Mr"
+      },
+      "firstName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "middleName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "lastName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "suffix": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "Jr"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.059Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[nSEz]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "brokerFirm": "string",
+    "brokerContactEmail": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "emailType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "emailType": "Personal"
+      },
+      "emailAddress": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.059Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[61rc2txDrHgv]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "brokerContactPhone": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "contactType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "contactType": "Personal"
+      },
+      "countryCode": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "phoneNumber": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.059Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[XDCGy_g0baYjUOndd0_ikoYIFYH2vkCzaNaXvowl09HC44qodj3cBBhSUTAhUL0PfsDnrP5F_P]"
+          }
+        ],
+        "customFields": "string"
+      }
+    }
+  },
+  "emergencyContactInformation": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "name": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "nameTitle": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "Mr"
+      },
+      "firstName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "middleName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "lastName": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "suffix": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "Jr"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.059Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[1o2E1eAcDfMT_FYy1vCMPd7Q7ahJtBtew39QLNTB8zgeMCMhxqMJAtEEIw_I0e_XwL]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "relationship": "string",
+    "contactEmail": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "emailType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "emailType": "Personal"
+      },
+      "emailAddress": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.059Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[QQjUPqDmH8LK4TXrlNvlATtYI]"
+          }
+        ],
+        "customFields": "string"
+      }
+    },
+    "contactPhone": {
+      "groupHeader": {
+        "groupId": 0,
+        "groupMnemonic": "string",
+        "displayLabel": "string",
+        "displaySubLabel": "string",
+        "groupIndex": 0,
+        "visible": true
+      },
+      "contactType": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "contactType": "Personal"
+      },
+      "countryCode": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "phoneNumber": {
+        "fieldHeader": {
+          "fieldId": 0,
+          "fieldMnemonic": "string",
+          "displayLabel": "string",
+          "displaySubLabel": "string",
+          "fieldIndex": 0,
+          "visible": true
+        },
+        "fieldValue": "string"
+      },
+      "customFields": {
+        "fields": [
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": 0
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "regexFormat": "string"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": "string",
+            "format": "2023-06-13T17:37:55.059Z"
+          },
+          {
+            "fieldHeader": {
+              "fieldId": 0,
+              "fieldMnemonic": "string",
+              "displayLabel": "string",
+              "displaySubLabel": "string",
+              "fieldIndex": 0,
+              "visible": true
+            },
+            "fieldValue": true,
+            "format": "2023-06-13",
+            "rendering": "YesNo"
+          },
+          {
+            "id": 0,
+            "fieldIndex": 0,
+            "fieldMnemonic": "string",
+            "displayName": "string",
+            "choiceFieldElementsString": "[Lb6eNairjnZthKMuolo0WuWLBegweRMbOC]"
+          }
+        ],
+        "customFields": "string"
+      }
+    }
+  },
+  "extraInformation": {
+    "sectionHeader": {
+      "sectionId": 0,
+      "sectionMnemonic": "string",
+      "displayLabel": "string",
+      "displaySubLabel": "string",
+      "sectionIndex": 0,
+      "visible": true
+    },
+    "extraInformation": "string"
+  }
+}
