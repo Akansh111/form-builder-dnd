@@ -6,6 +6,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Edit2, MoreVertical, Trash2 } from 'lucide-react';
 import { memo } from 'react';
+import { SIDEBAR } from '../libs/constants';
 import useTemplate from '../store/useTemplate';
 import { Button } from '../ui/button';
 import { Small } from '../ui/small';
@@ -13,12 +14,14 @@ import { Small } from '../ui/small';
 function ElementDropDown({ path }: { path: string }) {
   const removeEntity = useTemplate((s) => s.removeEntity);
   const setSelectedEntity = useTemplate((s) => s.setSelectedEntity);
+  const setActiveSidebar = useTemplate((s) => s.setActiveSidebar);
 
   const menuItems = [
     {
       label: 'Edit',
       icon: <Edit2 className='w-4 h-4' />,
       onClick: () => {
+        setActiveSidebar(SIDEBAR.EDIT_COMPONENT, true);
         setSelectedEntity(path);
       },
     },

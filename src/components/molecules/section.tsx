@@ -2,7 +2,7 @@
 import { DragOverlay, useDroppable } from '@dnd-kit/core';
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { lowerCase } from 'lodash-es';
-import { DRAGGABLE_TYPE } from '../constants/dnd';
+import { DRAGGABLE_TYPE } from '../libs/constants';
 import { IGroup, ISection } from '../store/template';
 import { useDragContext } from '../store/useDragContext';
 import useTemplate from '../store/useTemplate';
@@ -28,16 +28,14 @@ import SortableItem from './sortableItem';
    if (activeSection === '') return null;
 
    return (
-     <div className='m-2 space-y-2' ref={setNodeRef}>
+     <div className='m-2 space-y-2 ' ref={setNodeRef}>
        <h2 className='text-2xl font-semibold tracking-tight capitalize'>{lowerCase(activeSection)}</h2>
 
        <div className={`${over ? 'bg-gray-500 rounded-lg' : 'bg-transparent'} -m-2 p-2 transition-all space-y-2`}>
          <SortableContext items={Object.keys(groups)} strategy={verticalListSortingStrategy}>
            {Object.keys(groups).map((groupKey) => (
              <SortableItem id={groupKey} key={groupKey} type={DRAGGABLE_TYPE.GROUP}>
-               <Group title={groupKey} group={groups[groupKey] as IGroup} path={
-                `${activeSection}`
-               } />
+               <Group title={groupKey} group={groups[groupKey] as IGroup} path={`${activeSection}`} />
              </SortableItem>
            ))}
          </SortableContext>
@@ -57,9 +55,8 @@ import SortableItem from './sortableItem';
                    addComponents?.[activeElement.id.split('-')[1]]?.components?.[
                      activeElement.id.split('-')[2]
                    ] as IGroup
-                 }path={
-                  `${activeSection}`
                  }
+                 path={`${activeSection}`}
                />
              </div>
            ) : null}

@@ -1,10 +1,11 @@
 import { lowerCase } from 'lodash-es';
 import { GripVertical } from 'lucide-react';
+import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import ElementDropDown from '../atoms/elementDropDown';
+import { ROUTES } from '../libs/routes';
 import { getInputType, getValue } from '../libs/utils';
 import { IField, IGroup } from '../store/template';
-import useTemplate from '../store/useTemplate';
 import { Button } from '../ui/button';
 import { H4 } from '../ui/h4';
 import { Input } from '../ui/input';
@@ -14,7 +15,9 @@ import { SortableItemContext } from './sortableItem';
 export default function Group({ title, group, path }: { title: string; group: IGroup; path?: string }) {
   const { groupHeader, ...fieldsOrGroups } = group || {};
   const { listeners } = useContext(SortableItemContext);
-  const removeEntity = useTemplate((s) => s.removeEntity);
+  const router = useRouter();
+
+  const isPreview = router.pathname === ROUTES.PREVIEW;
 
   if (group?.groupHeader?.visible === false) return null;
 
@@ -23,13 +26,15 @@ export default function Group({ title, group, path }: { title: string; group: IG
       <div className='flex flex-row'>
         <H4>{getValue(group?.groupHeader?.displayLabel) || lowerCase(title.split('-')[0])}</H4>
 
-        <div className='ml-auto space-x-2'>
-          <ElementDropDown path={`${path}.${title}`} />
+        {!isPreview && (
+          <div className='ml-auto space-x-2'>
+            <ElementDropDown path={`${path}.${title}`} />
 
-          <Button variant='outline' size='icon' {...listeners}>
-            <GripVertical className='w-4 h-4' />
-          </Button>
-        </div>
+            <Button variant='outline' size='icon' {...listeners}>
+              <GripVertical className='w-4 h-4' />
+            </Button>
+          </div>
+        )}
       </div>
 
       <CurrencyInput group={group} />
@@ -43,6 +48,7 @@ export default function Group({ title, group, path }: { title: string; group: IG
                   title={customFieldKey}
                   key={customFieldKey}
                   field={fieldsOrGroups[fieldOrGroupKey][customFieldKey] as IField}
+                  path={`${path}.${title}`}
                 />
               );
             });
@@ -61,7 +67,12 @@ export default function Group({ title, group, path }: { title: string; group: IG
 
           if (fieldsOrGroups[fieldOrGroupKey]?.fieldHeader) {
             return (
-              <Field title={fieldOrGroupKey} key={fieldOrGroupKey} field={fieldsOrGroups[fieldOrGroupKey] as IField} />
+              <Field
+                title={fieldOrGroupKey}
+                key={fieldOrGroupKey}
+                field={fieldsOrGroups[fieldOrGroupKey] as IField}
+                path={`${path}.${title}`}
+              />
             );
           }
         })}

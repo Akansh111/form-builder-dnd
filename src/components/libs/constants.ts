@@ -4,3 +4,8 @@ export const DRAGGABLE_TYPE = {
   ADD_GROUP: 'ADD_GROUP',
   ADD_FIELD: 'ADD_FIELD',
 };
+
+export const SIDEBAR = {
+  TOOLBOX: 'TOOLBOX',
+  EDIT_COMPONENT: 'EDIT_COMPONENT',
+};

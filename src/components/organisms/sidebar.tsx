@@ -1,18 +1,21 @@
 import { Component, SlidersHorizontal, X } from 'lucide-react';
-import { useState } from 'react';
 import AnimatedSidePanel from '../atoms/animatedSidePanel';
+import { SIDEBAR } from '../libs/constants';
 import AddComponents from '../molecules/addComponents';
 import EditComponent from '../molecules/editComponent';
+import useTemplate from '../store/useTemplate';
 import { Button } from '../ui/button';
 import { H5 } from '../ui/h5';
 
 const sideComponents = [
   {
+    id: SIDEBAR.TOOLBOX,
     name: 'Toolbox',
     Icon: Component,
     children: <AddComponents />,
   },
   {
+    id: SIDEBAR.EDIT_COMPONENT,
     name: 'Edit Component',
     Icon: SlidersHorizontal,
     children: <EditComponent />,
@@ -20,32 +23,14 @@ const sideComponents = [
 ];
 
 export default function Sidebar() {
-  const [activeSidebar, setActiveSidebar] = useState('toolbox');
-
-  const handleButtonClick = (name: string) => {
-    if (activeSidebar !== name && activeSidebar !== '') {
-      setActiveSidebar('');
-
-      setTimeout(() => {
-        setActiveSidebar(name);
-        console.log('timers');
-      }, 500);
-    }
-
-    if (activeSidebar === name) {
-      setActiveSidebar('');
-    }
-
-    if (activeSidebar === '') {
-      setActiveSidebar(name);
-    }
-  };
+  const activeSidebar = useTemplate((s) => s.activeSidebar);
+  const setActiveSidebar = useTemplate((s) => s.setActiveSidebar);
 
   return (
     <>
       <div className='z-20 flex flex-col h-full px-1 space-y-1 bg-gray-200'>
-        {sideComponents.map(({ name, Icon }, key) => {
-          const isActive = activeSidebar === name;
+        {sideComponents.map(({ id, name, Icon }, key) => {
+          const isActive = activeSidebar === id;
 
           return (
             <Button
@@ -56,7 +41,7 @@ export default function Sidebar() {
                   ? 'bg-blue-200 shadow shadow-blue-600/10 text-blue-900'
                   : 'bg-transparent shadow-none text-gray-800'
               }`}
-              onClick={() => handleButtonClick(name)}
+              onClick={() => setActiveSidebar(id)}
               key={key}
               title={name}
             >
@@ -67,8 +52,8 @@ export default function Sidebar() {
         })}
       </div>
 
-      {sideComponents.map(({ name, children }, key) => (
-        <AnimatedSidePanel isVisible={activeSidebar === name} key={key}>
+      {sideComponents.map(({ id, name, children }, key) => (
+        <AnimatedSidePanel isVisible={activeSidebar === id} key={key}>
           <div className='flex flex-col w-64 h-full overflow-hidden bg-white rounded-md shadow-md'>
             <div className='flex flex-row justify-between w-full px-2 py-3 bg-gray-300'>
               <H5 className='my-auto'>{name}</H5>

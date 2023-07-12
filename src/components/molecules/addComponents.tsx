@@ -1,10 +1,10 @@
 import { DragOverlay, useDroppable } from '@dnd-kit/core';
 import { lowerCase } from 'lodash-es';
-import { DRAGGABLE_TYPE } from '../constants/dnd';
+import Draggable from '../atoms/draggable';
+import { DRAGGABLE_TYPE } from '../libs/constants';
 import { useDragContext } from '../store/useDragContext';
 import useTemplate from '../store/useTemplate';
 import { H5 } from '../ui/h5';
-import Draggable from '../atoms/draggable';
 
 export default function AddComponents() {
   const template = useTemplate((s) => s.template);

@@ -1,7 +1,9 @@
 import type { DraggableSyntheticListeners, UniqueIdentifier } from '@dnd-kit/core';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
+import { useRouter } from 'next/router';
 import { createContext, useMemo } from 'react';
+import { ROUTES } from '../libs/routes';
 interface Props {
   id: UniqueIdentifier;
 }
@@ -19,6 +21,8 @@ export const SortableItemContext = createContext<Context>({
 });
 
 export default function SortableItem({ id, type, children }: { id: string; type: string; children: React.ReactNode }) {
+  const router = useRouter();
+  const isPreview = router.pathname === ROUTES.PREVIEW;
   const { isDragging, listeners, setActivatorNodeRef, attributes, setNodeRef, transform, transition } = useSortable({
     id: id,
     data: {
@@ -40,6 +44,8 @@ export default function SortableItem({ id, type, children }: { id: string; type:
     transform: CSS.Transform.toString(transform)?.replace(/scaleY\((.*?)\)/, 'scaleY(1)'),
     transition,
   };
+
+  if (isPreview) return <div>{children}</div>;
 
   return (
     <SortableItemContext.Provider value={context}>
